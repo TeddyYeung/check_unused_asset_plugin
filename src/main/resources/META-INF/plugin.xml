@@ -5,11 +5,12 @@
     <vendor>teddyyeung</vendor>
 
     <depends>com.intellij.modules.platform</depends>
+    <depends>org.jetbrains.kotlin</depends>
 
     <resource-bundle>messages.MyBundle</resource-bundle>
 
     <extensions defaultExtensionNs="com.intellij">
-        <toolWindow factoryClass="com.github.teddyyeung.checkunusedassetplugin.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>
+        <toolWindow factoryClass="com.github.teddyyeung.checkunusedassetplugin.toolWindow.AssetInspectorToolWindowFactory" id="MyToolWindow"/>
         <postStartupActivity implementation="com.github.teddyyeung.checkunusedassetplugin.startup.MyProjectActivity" />
     </extensions>
 </idea-plugin>

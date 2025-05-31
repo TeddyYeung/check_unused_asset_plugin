@@ -42,7 +42,7 @@ dependencies {
         bundledPlugins(providers.gradleProperty("platformBundledPlugins").map { it.split(',') })
 
         // Plugin Dependencies. Uses `platformPlugins` property from the gradle.properties file for plugin from JetBrains Marketplace.
-        plugins(providers.gradleProperty("platformPlugins").map { it.split(',') })
+        bundledPlugins(providers.gradleProperty("platformPlugins").map { it.split(',') })
 
         testFramework(TestFrameworkType.Platform)
     }
